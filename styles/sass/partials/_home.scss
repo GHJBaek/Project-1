@@ -1,0 +1,67 @@
+// Header
+.homeHeader {
+    background-color: $lightGreyBlue;
+    padding-top: 50px;
+
+    h1{
+        font-size: 80px;
+        
+    }
+
+    .textContainer {
+        align-items: center;
+    }
+}
+
+// Description section
+ .description {
+    background-color: $whiteShade;
+    height: 40vh;
+    
+   
+    .textContainer {
+        width: 50%;     
+        margin: auto 0 auto auto;
+        padding-top: 70px;
+    }
+    h2 {
+        margin: 0;
+    }
+}
+
+//Banner
+.banner {
+    height: 40vh ;
+    background-image: url(../project-1-harper/assets/home-image-2.jpg);
+}
+
+// Info section
+.info {
+    height: 50vh;
+    background-color: $whiteShade;
+    .content {
+        width: 50%;
+    }
+}
+
+// travelsThings section
+
+.travelsThings {
+    height: 70vh;
+}
+
+// journey section
+.journey {
+    background-color: $whiteShade;
+}
+
+// gallery section
+.gallery {
+    margin: 50px auto;
+    
+    li:nth-child(1),
+    li:nth-child(2){
+        margin-right: 10px;
+    }
+
+}

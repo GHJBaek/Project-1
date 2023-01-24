@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/510c9713ea.css" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -15,13 +18,13 @@
 
             <ul>
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="">Harper</a>
+                    <h5>Harper</h5>
                 </li>
                 <li>
                     <a href="./blog.html">Blog</a>
@@ -42,10 +45,59 @@
         </div><!-- wrapper -->
     </header>
 
+    <main class="contactMain">
+        <div class="wrapper ">
+            <div class="flexContainer">
+                <aside>                              
+                    <ul>
+                        <li>
+                            <a href="fb"></a>
+                        </li>
+                        <li>
+                            <a href="twit"></a>
+                        </li>
+                        <li>
+                            <a href="linked"></a>
+                        </li>
+                        <li>
+                            <a href="insta"></a>
+                        </li>
+                    </ul>
+
+                    <div class="textContainer">
+                        <h3>Recent Posts</h3>
+                        <p>123-456-7890</p>
+                        <p>123 Queen Streen West. Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div><!-- textContainer -->
+                </aside>
+            
+                
+            
+                <form action="" class="contactForm" name="contactForm">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" id="email" placeholder="Email address">
+                
+
+                    <div class="flexContainer">
+                        <label for="comment" class="sr-only">Comment</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div><!-- wrapper -->
+    </main>
+
     <footer>
         <div class="wrapper">
 
-            <p>Copyright 2018 HackerYou</p>
+            <p>Copyright © 2018 HackerYou</p>
 
         </div><!-- wrapper -->
     </footer>

@@ -1,0 +1,31 @@
+ul {
+    justify-content: space-between;
+}
+section {
+    min-height: 400px;
+}
+
+// Nav
+nav {
+    background-color: $lightGreyBlue;
+    padding: 10px;
+    li{
+        margin: auto 0;
+    }
+    h5{
+       font-size:  60px;
+       margin: auto 0;
+    }
+}
+
+
+
+// Footer
+footer {
+    display: flex;
+    background-color: $solidBlack;
+    text-align: center;
+    p{
+        color: $whiteShade;
+    }
+}

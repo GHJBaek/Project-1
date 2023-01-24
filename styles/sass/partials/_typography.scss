@@ -1,0 +1,19 @@
+// import Oswald font in bold and cabin regular
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@600;700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: $defaultFont;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $bodyFont;
+    color: $solidBlack;
+    font-size: 20px;
+}
