@@ -1,0 +1,44 @@
+.blogHeader {
+    height: 40vh;
+    background-size: cover;
+    background-image: url(../project-1-harper/assets/blog-image-1.jpg);
+
+    .position {
+            position: relative;
+            top: 330px
+        }
+    
+    h1 {
+        font-size: 80px;
+        margin: 0;
+
+    }
+}
+.blogMain {
+    background-color: $whiteShade;
+        padding-top: 75px;
+        padding-bottom: 75px;
+
+        aside{
+            width: 40%;
+        
+            .aboutHarper,
+            .recentPosts {
+                background-color: $solideWhite;
+                padding: 20px;
+                margin-right: 30px;
+
+            }
+    
+        }
+
+        article {
+            background-color: $solideWhite;
+            width: 90%;
+            padding: 20px;
+            margin-right: 30px;
+        }
+        section {
+            margin-bottom: 10px;
+        }
+}

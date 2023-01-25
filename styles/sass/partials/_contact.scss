@@ -1,0 +1,74 @@
+.contactHeader {
+    height: 40vh;
+    background-image: url(../project-1-harper/assets/contact-image-1.jpg);
+
+    .position {
+        position: relative;
+        top: 330px
+        
+    }
+    h1{
+        font-size: 80px;
+        margin: 0;
+
+    }
+}
+
+.contactMain {
+    background-color: $whiteShade;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    .textContainer {
+        background-color: $solideWhite;
+        width: 30%;
+        padding: 20px;
+        margin-right: 30px;
+        
+        h3 {
+            text-transform: lowercase;
+        }
+
+    }
+
+    
+    
+    
+
+   
+}
+
+.contactForm {
+    width: 70%;
+
+}
+
+input,
+textarea {
+    border: none;
+    font-family: $defaultFont;
+    padding: 20px 10px
+}
+
+input[type='text'] {
+    margin-right: 10px;
+    color: $solidBlack;
+    width: calc(50% - 10px);
+}
+
+input[type='email'] {
+    color: $solidBlack;
+    width: calc(50% - 10px);
+}
+
+textarea {
+    color: $solidBlack;
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+}

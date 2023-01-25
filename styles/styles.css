@@ -225,6 +225,7 @@ html {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 ul {
@@ -244,6 +245,10 @@ a {
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav,
 ul,
 .flexContainer {
@@ -255,7 +260,8 @@ h2,
 h3,
 h4,
 h5,
-a {
+a,
+button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
@@ -263,7 +269,19 @@ a {
 p {
   font-family: "Cabin", sans-serif;
   color: #171717;
-  font-size: 20px;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -272,6 +290,10 @@ ul {
 
 section {
   min-height: 400px;
+}
+
+.textContainer {
+  min-width: 450px;
 }
 
 nav {
@@ -290,20 +312,39 @@ footer {
   display: flex;
   background-color: #171717;
   text-align: center;
+  background-size: cover;
 }
 footer p {
+  margin: 0;
   color: #f6f6f6;
+}
+
+button {
+  background-color: #f38d8d;
+  border-style: none;
+  padding: 10px 30px;
 }
 
 .homeHeader {
   background-color: #b9dde7;
-  padding-top: 50px;
 }
 .homeHeader h1 {
-  font-size: 80px;
+  font-size: 8rem;
 }
 .homeHeader .textContainer {
-  align-items: center;
+  text-align: start;
+  margin: auto 0;
+  padding-left: 50px;
+}
+.homeHeader .textContainer .position {
+  position: relative;
+  bottom: 330px;
+  left: 410px;
+}
+.homeHeader .imgContainer {
+  box-shadow: 20px 20px 0 0 #fff;
+  position: relative;
+  top: 60px;
 }
 
 .description {
@@ -322,22 +363,75 @@ footer p {
 .banner {
   height: 40vh;
   background-image: url(../project-1-harper/assets/home-image-2.jpg);
+  background-size: cover;
 }
 
 .info {
-  height: 50vh;
+  min-height: 50vh;
   background-color: #f6f6f6;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
 .info .content {
   width: 50%;
 }
 
 .travelsThings {
-  height: 70vh;
+  min-height: 700px;
+}
+.travelsThings .textContainer {
+  width: 50%;
+  margin: auto 0;
+}
+.travelsThings .textContainer.box1 {
+  padding-left: 50px;
+}
+.travelsThings .textContainer.box2 {
+  padding-right: 50px;
+}
+.travelsThings .imgContainer {
+  width: 50%;
+}
+.travelsThings .imgContainer.box1 {
+  position: relative;
+  background-color: #227294;
+  bottom: 40px;
+  right: 400px;
+}
+.travelsThings .box1 .position {
+  box-shadow: 20px 20px 0 0 #227294;
+  position: relative;
+  left: 400px;
+  bottom: 20px;
+}
+.travelsThings .imgContainer.box2 {
+  position: relative;
+  background-color: #b9dde7;
+  top: 40px;
+  left: 400px;
+}
+.travelsThings .box2 .position {
+  box-shadow: 20px 20px 0 0 #b9dde7;
+  position: relative;
+  right: 400px;
+  bottom: 20px;
+}
+.travelsThings .textContainer .right {
+  text-align: right;
+  padding-right: 50px;
 }
 
 .journey {
   background-color: #f6f6f6;
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+.journey .textContainer {
+  margin-left: 50px;
+  width: 70%;
+}
+.journey .imgContainer {
+  box-shadow: 20px 20px 0 0 #227294;
 }
 
 .gallery {
@@ -346,4 +440,105 @@ footer p {
 .gallery li:nth-child(1),
 .gallery li:nth-child(2) {
   margin-right: 10px;
+}
+
+.contactHeader {
+  height: 40vh;
+  background-image: url(../project-1-harper/assets/contact-image-1.jpg);
+}
+.contactHeader .position {
+  position: relative;
+  top: 330px;
+}
+.contactHeader h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.contactMain {
+  background-color: #f6f6f6;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.contactMain .textContainer {
+  background-color: #fff;
+  width: 30%;
+  padding: 20px;
+  margin-right: 30px;
+}
+.contactMain .textContainer h3 {
+  text-transform: lowercase;
+}
+
+.contactForm {
+  width: 70%;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: "Oswald", sans-serif;
+  padding: 20px 10px;
+}
+
+input[type=text] {
+  margin-right: 10px;
+  color: #171717;
+  width: calc(50% - 10px);
+}
+
+input[type=email] {
+  color: #171717;
+  width: calc(50% - 10px);
+}
+
+textarea {
+  color: #171717;
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.blogHeader {
+  height: 40vh;
+  background-size: cover;
+  background-image: url(../project-1-harper/assets/blog-image-1.jpg);
+}
+.blogHeader .position {
+  position: relative;
+  top: 330px;
+}
+.blogHeader h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.blogMain {
+  background-color: #f6f6f6;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.blogMain aside {
+  width: 40%;
+}
+.blogMain aside .aboutHarper,
+.blogMain aside .recentPosts {
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 30px;
+}
+.blogMain article {
+  background-color: #fff;
+  width: 90%;
+  padding: 20px;
+  margin-right: 30px;
+}
+.blogMain section {
+  margin-bottom: 10px;
 }

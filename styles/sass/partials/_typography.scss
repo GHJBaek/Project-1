@@ -7,7 +7,8 @@ h2,
 h3,
 h4,
 h5,
-a {
+a,
+button {
     font-family: $defaultFont;
     text-transform: uppercase;
 }
@@ -15,5 +16,16 @@ a {
 p {
     font-family: $bodyFont;
     color: $solidBlack;
-    font-size: 20px;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    line-height: 1.5rem;
+}
+
+h3{
+    font-size: 1.5rem ;
+    letter-spacing: 1px;
+}
+h4 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
