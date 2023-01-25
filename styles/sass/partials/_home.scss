@@ -1,29 +1,36 @@
+// nav highlight
+.homeNav {
+    color: $solideWhite;
+}
+
 // Header
 .homeHeader {
     background-color: $lightGreyBlue;
-    
 
-    h1{
+
+    h1 {
         font-size: 8rem;
-        
-        
+
+
     }
 
     .textContainer {
-        text-align:start;
+        text-align: start;
         margin: auto 0;
         padding-left: 50px;
     }
+
     // Everyday life with
     .textContainer .position {
         position: relative;
         bottom: 330px;
         left: 410px;
     }
+
     .imgContainer {
         box-shadow: 20px 20px 0 0 $solideWhite;
         position: relative;
-        top:60px;
+        top: 60px;
     }
 }
 
@@ -31,12 +38,13 @@
 .description {
     background-color: $whiteShade;
     height: 40vh;
-    
+
     .textContainer {
-        width: 50%;     
+        width: 50%;
         margin: auto 0 auto auto;
         padding-top: 70px;
     }
+
     h2 {
         margin: 0;
     }
@@ -44,10 +52,10 @@
 
 //Banner
 .banner {
-    height: 40vh ;
+    height: 40vh;
     background-image: url(../project-1-harper/assets/home-image-2.jpg);
     background-size: cover;
-    
+
 }
 
 // Info section
@@ -59,8 +67,30 @@
 
     .content {
         width: 50%;
-        
+
     }
+    .imgContainer{
+        min-width: 20px;
+        padding-top: 25px;
+        margin-right: 40px;
+    }
+  
+    .fa-image,
+    .fa-display,
+    .fa-user,
+    .fa-phone-flip{
+        position: relative;
+        background: $lightGreyBlue;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        &:before{
+            position: absolute;
+            left: 10px;
+        }
+    }
+    
 }
 
 // travelsThings section
@@ -72,8 +102,9 @@
     .textContainer {
         width: 50%;
         margin: auto 0;
-        
+
     }
+
     .textContainer.box1 {
         padding-left: 50px;
     }
@@ -82,11 +113,11 @@
         padding-right: 50px;
     }
 
-    .imgContainer{
+    .imgContainer {
         width: 50%;
-        
+
     }
-    
+
     // box shadow
     .imgContainer.box1 {
         position: relative;
@@ -95,13 +126,14 @@
         right: 400px;
 
     }
+
     .box1 .position {
         box-shadow: 20px 20px 0 0 $duskBlue;
         position: relative;
         left: 400px;
         bottom: 20px;
     }
-    
+
 
     .imgContainer.box2 {
         position: relative;
@@ -110,6 +142,7 @@
         left: 400px;
 
     }
+
     .box2 .position {
         box-shadow: 20px 20px 0 0 $lightGreyBlue;
         position: relative;
@@ -117,7 +150,7 @@
         bottom: 20px;
     }
 
-    .textContainer .right{
+    .textContainer .right {
         text-align: right;
         padding-right: 50px;
     }
@@ -129,24 +162,32 @@
     background-color: $whiteShade;
     padding-top: 100px;
     padding-bottom: 75px;
+
     .textContainer {
         margin-left: 50px;
         width: 70%;
-        
+
+
     }
+
     .imgContainer {
-        box-shadow: 20px 20px 0 0 $duskBlue;
+
+        img {
+            box-shadow: 20px 20px 0 0 $duskBlue;
+        }
+
+
     }
-    
+
 }
+
 
 // gallery section
 .gallery {
     margin: 50px auto;
-    
+
     li:nth-child(1),
-    li:nth-child(2){
+    li:nth-child(2) {
         margin-right: 10px;
     }
-
 }

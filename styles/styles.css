@@ -325,6 +325,10 @@ button {
   padding: 10px 30px;
 }
 
+.homeNav {
+  color: #fff;
+}
+
 .homeHeader {
   background-color: #b9dde7;
 }
@@ -374,6 +378,29 @@ button {
 }
 .info .content {
   width: 50%;
+}
+.info .imgContainer {
+  min-width: 20px;
+  padding-top: 25px;
+  margin-right: 40px;
+}
+.info .fa-image,
+.info .fa-display,
+.info .fa-user,
+.info .fa-phone-flip {
+  position: relative;
+  background: #b9dde7;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.info .fa-image:before,
+.info .fa-display:before,
+.info .fa-user:before,
+.info .fa-phone-flip:before {
+  position: absolute;
+  left: 10px;
 }
 
 .travelsThings {
@@ -430,7 +457,7 @@ button {
   margin-left: 50px;
   width: 70%;
 }
-.journey .imgContainer {
+.journey .imgContainer img {
   box-shadow: 20px 20px 0 0 #227294;
 }
 
@@ -442,9 +469,14 @@ button {
   margin-right: 10px;
 }
 
+.contactNav {
+  color: #fff;
+}
+
 .contactHeader {
   height: 40vh;
   background-image: url(../project-1-harper/assets/contact-image-1.jpg);
+  background-size: cover;
 }
 .contactHeader .position {
   position: relative;
@@ -467,7 +499,25 @@ button {
   margin-right: 30px;
 }
 .contactMain .textContainer h3 {
+  padding-top: 100px;
   text-transform: lowercase;
+  margin-left: 30px;
+}
+.contactMain .textContainer p {
+  margin-left: 30px;
+}
+.contactMain aside {
+  position: relative;
+  bottom: 25px;
+}
+.contactMain ul {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  width: 70%;
+}
+.contactMain ul i {
+  color: #227294;
 }
 
 .contactForm {
@@ -505,6 +555,10 @@ button {
   margin-top: 20px;
 }
 
+.blogNav {
+  color: #fff;
+}
+
 .blogHeader {
   height: 40vh;
   background-size: cover;
@@ -532,13 +586,42 @@ button {
   background-color: #fff;
   padding: 20px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .blogMain article {
   background-color: #fff;
-  width: 90%;
   padding: 20px;
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
-.blogMain section {
-  margin-bottom: 10px;
+.blogMain .comment2,
+.blogMain .blogPost {
+  border-bottom: 4px solid #227294;
+  border-color: #227294;
+}
+.blogMain .comment1 .imgContainer,
+.blogMain .comment2 .imgContainer {
+  padding-top: 20px;
+  width: 30%;
+  margin-right: 20px;
+  min-width: 90px;
+}
+
+@media (max-width: 1220px) {
+  .homeHeader .imgContainer {
+    position: absolute;
+    left: -99999px;
+  }
+  .homeHeader .textContainer {
+    justify-content: center;
+  }
+  .description .textContainer {
+    margin: auto 0;
+  }
+  .flexContainer {
+    flex-direction: column;
+  }
+  .travelsThings {
+    position: absolute;
+    left: -99999px;
+  }
 }

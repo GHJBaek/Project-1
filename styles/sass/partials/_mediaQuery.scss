@@ -1,4 +1,28 @@
 
-@media (min-width: 320px) {
+
+
+@media (max-width: 1220px) {
+    
+    .homeHeader {
+        .imgContainer{
+        position: absolute;
+        left: -99999px;
+        }
+        .textContainer {
+            justify-content: center;
+        }
+
+    }
+    .description .textContainer {
+        margin: auto 0;
+    }
+   .flexContainer {
+        flex-direction: column;
+    }
+    .travelsThings
+    {position: absolute;
+        left: -99999px;
+        
+    }  
     
 }
