@@ -1,5 +1,11 @@
-ul {
-    justify-content: space-between;
+nav  {
+    li{
+        padding: 0 50px 50px 50px;
+    }
+    ul {
+        justify-content: center;
+    }
+    
 }
 section {
     min-height: 400px;
