@@ -1,27 +1,33 @@
-nav  {
-    li{
+nav {
+    li {
         padding: 0 50px 50px 50px;
     }
+
     ul {
         justify-content: center;
     }
-    
+
 }
+
 section {
     min-height: 400px;
 }
+
 .textContainer {
     min-width: 450px;
 }
+
 // Nav
 nav {
     background-color: $lightGreyBlue;
     padding: 10px;
-    li{
+
+    li {
         margin: auto 0;
     }
-    h5{
-        font-size:  60px;
+
+    h5 {
+        font-size: 60px;
         margin: auto 0;
     }
 }
@@ -34,10 +40,11 @@ footer {
     background-color: $solidBlack;
     text-align: center;
     background-size: cover;
-    p{
+
+    p {
         margin: 0;
         color: $whiteShade;
-        
+
     }
 }
 
@@ -47,4 +54,21 @@ button {
     border-style: none;
     padding: 10px 30px;
 
+}
+
+.hamburgerButton {
+    padding: 0;
+    border: none;
+    background-color: $lightGreyBlue;
+    display: flex;
+    i{
+        margin: 0 auto;
+        
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.hamburgerMenu {
+    display: none;
 }

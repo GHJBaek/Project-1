@@ -328,6 +328,23 @@ button {
   padding: 10px 30px;
 }
 
+.hamburgerButton {
+  padding: 0;
+  border: none;
+  background-color: #b9dde7;
+  display: flex;
+}
+.hamburgerButton i {
+  margin: 0 auto;
+}
+.hamburgerButton:hover {
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
 .homeNav {
   color: #fff;
 }
@@ -718,6 +735,26 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 840px) {
+  .hamburgerButton {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .menu {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+  .hamburgerMenu.open {
+    display: block;
+  }
+  .hamburgerMenu ul {
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media (max-width: 800px) {
