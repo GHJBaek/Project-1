@@ -2,27 +2,221 @@
 
 
 @media (max-width: 1220px) {
+    .blogMain {
     
+            aside,
+            section {
+                width: 100%;
+            }
+            aside {
+                
+                margin: auto;
+                text-align: center;
+
+                .imgContainer {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+                }
+
+                .textContainer {
+                    justify-content: center;
+                    width: 100%;
+                    margin: 0 auto;
+                    min-width: 200px;
+
+                }
+            }
+        }
+    
+    
+   
     .homeHeader {
         .imgContainer{
-        position: absolute;
-        left: -99999px;
+            display: none;
+            
+        }
+        .position img{
+            display: none;
+        }
+        h1 {
+            text-align: center;
+        }
+        //make .textContainer center           
+        
+    }
+     // make content in .homeMain center
+    .homeMain {
+        .info .imgContainer {
+            display: none;
         }
         .textContainer {
-            justify-content: center;
+            width: 100%;
+            margin: auto;
+            text-align: center;
         }
+        .flexContainer .content {
+            width: 100%;
+        }
+        .journey img {
+            display: none;
+        }
+    }
 
-    }
-    .description .textContainer {
-        margin: auto 0;
-    }
-   .flexContainer {
+ 
+    
+    .flexContainer {
         flex-direction: column;
     }
-    .travelsThings
-    {position: absolute;
-        left: -99999px;
-        
+    .travelsThings {
+        display: none;
     }  
+    // make .contactMain aside and section 100% width
+    .contactMain {
+        aside,
+        section {
+            width: 100%;
+        }
+        aside {
+            margin: auto;
+            text-align: center;
+
+            .imgContainer {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+            }
+
+            .textContainer {
+                justify-content: center;
+                width: 100%;
+                margin: 0 auto;
+                min-width: 200px;
+
+            }
+            ul{
+                padding-right: 40px;
+                width: 90%;
+            }
+        }
+    }
+    // make .contactForm width 100%
+    .contactForm {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+        .gallery {
+            margin: 50px auto;
     
+            li:nth-child(3) {
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+    
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+    
+            }
+        }
+}
+@media (max-width: 920px) {
+    .gallery {
+            margin: 50px auto;
+            li:nth-child(1),
+            li:nth-child(2),            
+            li:nth-child(3) {
+                margin-top: 10px;
+                
+            }
+            li:nth-child(3){
+                margin-right: 10px;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+    
+            }
+        }
+
+
+    
+    
+
+}
+@media (max-width: 800px){
+    .homeHeader h1{
+        font-size: 100px;
+    }
+}
+@media (max-width: 600px) {
+    .wrappers {
+        display: none;
+    }
+
+    .comment1,
+    .comment2 {
+        display: none;
+    }
+
+    #name,
+    #email {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .homeHeader h1 {
+        font-size: 70px;
+    }
+    .homeHeader .wrapper {
+        
+        margin: 0;     
+    }
+}
+@media (max-width: 500px) {
+    // make h1 span break to new line
+
+    .contactHeader {
+        h1 {
+            span {
+                display: block;
+            }
+        }
+        .position{
+            
+            position: relative;
+            top: 250px;
+        }
+    }
+   
+        
+
+}   
+@media (max-width: 320px) {
+    body {
+        min-width: 320px;
+    }
+
+    .blogMain {
+        aside {
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .contactHeader h1{
+        font-size: 70px;
+    }
+
+    .textContainer {
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+        min-width: 300px;
+    }
+
 }

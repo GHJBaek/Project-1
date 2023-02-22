@@ -514,6 +514,7 @@ button {
   bottom: 25px;
 }
 .contactMain ul {
+  justify-content: space-between;
   position: relative;
   top: 100px;
   left: 50px;
@@ -610,21 +611,165 @@ button {
 }
 
 @media (max-width: 1220px) {
-  .homeHeader .imgContainer {
-    position: absolute;
-    left: -99999px;
+  .blogMain aside,
+  .blogMain section {
+    width: 100%;
   }
-  .homeHeader .textContainer {
+  .blogMain aside {
+    margin: auto;
+    text-align: center;
+  }
+  .blogMain aside .imgContainer {
+    display: flex;
     justify-content: center;
+    width: 100%;
+    margin: auto;
   }
-  .description .textContainer {
-    margin: auto 0;
+  .blogMain aside .textContainer {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px;
+  }
+  .homeHeader .imgContainer {
+    display: none;
+  }
+  .homeHeader .position img {
+    display: none;
+  }
+  .homeHeader h1 {
+    text-align: center;
+  }
+  .homeMain .info .imgContainer {
+    display: none;
+  }
+  .homeMain .textContainer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .homeMain .flexContainer .content {
+    width: 100%;
+  }
+  .homeMain .journey img {
+    display: none;
   }
   .flexContainer {
     flex-direction: column;
   }
   .travelsThings {
-    position: absolute;
-    left: -99999px;
+    display: none;
+  }
+  .contactMain aside,
+  .contactMain section {
+    width: 100%;
+  }
+  .contactMain aside {
+    margin: auto;
+    text-align: center;
+  }
+  .contactMain aside .imgContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .contactMain aside .textContainer {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px;
+  }
+  .contactMain aside ul {
+    padding-right: 40px;
+    width: 90%;
+  }
+  .contactForm {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .gallery {
+    margin: 50px auto;
+  }
+  .gallery li:nth-child(3) {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .gallery ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 920px) {
+  .gallery {
+    margin: 50px auto;
+  }
+  .gallery li:nth-child(1),
+  .gallery li:nth-child(2),
+  .gallery li:nth-child(3) {
+    margin-top: 10px;
+  }
+  .gallery li:nth-child(3) {
+    margin-right: 10px;
+  }
+  .gallery ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .homeHeader h1 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .wrappers {
+    display: none;
+  }
+  .comment1,
+  .comment2 {
+    display: none;
+  }
+  #name,
+  #email {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .homeHeader h1 {
+    font-size: 70px;
+  }
+  .homeHeader .wrapper {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .contactHeader h1 span {
+    display: block;
+  }
+  .contactHeader .position {
+    position: relative;
+    top: 250px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    min-width: 320px;
+  }
+  .blogMain aside {
+    width: 100%;
+    margin: auto;
+  }
+  .contactHeader h1 {
+    font-size: 70px;
+  }
+  .textContainer {
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 300px;
   }
 }
